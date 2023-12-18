@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">14-23</string>
+    <string name="text_or">OR</string>
+    <string name="enter_otp_note">Enter OTP Sent to</string>
+    <string name="resend_otp">Resend OTP ?</string>
+    <string name="text_verify">Verify</string>
+    <string name="gis_village_boundry">https://hsacggm.in/server/rest/services/Onemap_Haryana/Village_LGD/MapServer</string>
+    <string name="gis_update_non_tracable_income">https://onemapdepts.gmda.gov.in/server4/rest/services/PPP/ppp_Verification/FeatureServer/8</string>
+    <string name="gis_update_member_details_fresh">https://onemapdepts.gmda.gov.in/server4/rest/services/PPP/ppp_Verification/FeatureServer/5</string>
+    <string name="gis_update_member_details_Existing">https://onemapdepts.gmda.gov.in/server4/rest/services/PPP/ppp_Verification/FeatureServer/6</string>
+    <string name="gis_update_member_count">https://onemapdepts.gmda.gov.in/server4/rest/services/PPP/ppp_Verification/FeatureServer/7</string>
+    <string name="gis_mark_as_dead">https://onemapdepts.gmda.gov.in/server4/rest/services/PPP/ppp_Verification/FeatureServer/2</string>
+    <string name="gis_update_dob_details">https://onemapdepts.gmda.gov.in/server4/rest/services/PPP/ppp_Verification/FeatureServer/4</string>
+    <array name="nonTracableOptions">
+
+        <item>Shifted to Inside Haryana</item>
+        <item>Shifted to Outside Haryana</item>
+        <item>Shifted to Inside Haryana , But address not known</item>
+        <item>Shifted to Unknown place</item>
+
+    </array>
+</resources>

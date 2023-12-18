@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="@dimen/dp_5"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_toLeftOf="@+id/menuBt"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <TextView
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_weight="0.25"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Family Id"
+                        android:textSize="@dimen/dp_13"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_weight="0.75"
+                        android:id="@+id/tvFamilyId"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Property Id"
+                        android:textSize="@dimen/dp_13"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_weight="0.25"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="HOF Name"
+                        android:textSize="@dimen/dp_13" />
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_weight="0.758"
+                        android:id="@+id/tvHOFName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textSize="@dimen/dp_13" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <ImageButton
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:id="@+id/menuBt"
+                android:src="@drawable/ic_more"
+                android:layout_alignParentRight="true"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_30"
+                app:tint="@color/colorDarkGray" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:textColor="@color/black"
+                android:layout_weight="0.25"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Mobile"
+                android:textSize="@dimen/dp_13" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_weight="0.85"
+                android:id="@+id/tvMobile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="@dimen/dp_13" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:textColor="@color/black"
+                android:layout_weight="0.25"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textSize="@dimen/dp_13" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_weight="0.75"
+                android:id="@+id/tvGender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="@dimen/dp_13" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:textColor="@color/black"
+                android:layout_weight="0.25"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textSize="@dimen/dp_13" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_weight="0.75"
+                android:id="@+id/tvAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="@dimen/dp_13" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+           <TextView
+               android:id="@+id/btMembernotTracable"
+               android:textSize="@dimen/dp_13"
+               android:text="Member not Traceable"
+               android:background="@color/colorDarkGray"
+               android:layout_weight=".5"
+               android:gravity="center"
+               android:textColor="@color/white"
+               android:layout_width="0dp"
+               android:layout_height="@dimen/dp_35"/>
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/btDOBVerification"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@color/button_bg"
+                android:textSize="@dimen/dp_13"
+                android:text="DOB Verification"
+                android:gravity="center"
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_35"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:elevation="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_toRightOf="@+id/btBack"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:weightSum="2"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Family Details"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/dp_15"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="@dimen/dp_5"
+                                android:layout_gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:id="@+id/loginAt"
+                                android:textSize="@dimen/dp_13"
+                                android:textColor="@color/white"
+                                android:text=""
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"/>
+
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/btBack"
+                            android:src="@drawable/back"
+                            android:layout_width="@dimen/dp_25"
+                            android:layout_height="@dimen/dp_25"/>
+
+                    </RelativeLayout>
+
+                </androidx.appcompat.widget.Toolbar>
+
+            </com.google.android.material.appbar.AppBarLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dp_15"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/mobNo"
+                            android:textSize="@dimen/dp_15"
+                            android:textColor="@color/colorDarkGray"
+                            android:text="Head of the Family"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:textSize="@dimen/dp_15"
+                            android:textStyle="bold"
+                            android:id="@+id/tvHOFName"
+                            android:textColor="@color/black"
+                            android:text="--"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dp_15"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="@dimen/dp_15"
+                            android:textColor="@color/colorDarkGray"
+                            android:text="Family id :  "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:textSize="@dimen/dp_15"
+                            android:textStyle="bold"
+                            android:id="@+id/tvFamilyId"
+                            android:textColor="@color/black"
+                            android:text="--"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dp_15"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="@dimen/dp_15"
+                            android:textColor="@color/colorDarkGray"
+                            android:text="Family Members : "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:textSize="@dimen/dp_15"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:text="--"
+                            android:id="@+id/tvfamilyMembers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:textColor="@color/white"
+                        android:background="@color/colorDarkGray"
+                        android:gravity="center"
+                        android:text="Family Members"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_30"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/reclycalView"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                        android:layoutAnimation="@anim/layout_animation_fall_down"
+                        android:layout_marginTop="15dp"
+                        android:layout_below="@+id/laySearch_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </layout>
